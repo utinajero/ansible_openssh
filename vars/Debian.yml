@@ -1,5 +1,5 @@
 # file: openssh/vars/Debian.yml
 
-openssh_apps: ["openssh-clients", "openssh-server"]
+openssh_apps: ["openssh-client", "openssh-server"]
 openssh_ssh: "ssh"
 openssh_src_sshd: "etc_ssh_sshd_config.j2"
