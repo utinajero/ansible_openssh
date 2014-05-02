@@ -8,12 +8,12 @@ galaxy_info:
   license: MIT
   
   platforms:
-    - name: EL
+    - name: CentOS
       versions: 
         - 6
     - name: Ubuntu 
       versions:
-        - all
+        - precise
   
   categories:
   - system
