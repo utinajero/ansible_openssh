@@ -3,9 +3,18 @@
 galaxy_info:
   author: Ulysses Tinajero
   company: None
-  description: "Install and configure openssh"
+  description: "Install and configure openssh on CentOS and Ubuntu"
   min_ansible_version: 1.4
   license: MIT
+  
+  platforms:
+    - name: EL
+      versions: 
+        - 6
+    - name: Ubuntu 
+      versions:
+        - all
+  
   categories:
   - system
   - networking
