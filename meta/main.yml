@@ -6,11 +6,6 @@ galaxy_info:
   description: "Install and configure openssh"
   min_ansible_version: 1.4
   license: MIT
-  platforms:
-  - name: Ubuntu
-    versions:
-    - all
-  - name: CentOS
   categories:
   - system
   - networking
