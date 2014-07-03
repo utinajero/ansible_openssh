@@ -1,2 +1,6 @@
 # file: openssh/vars/main.yml
 # set any variables you would like here 
+
+openssh_apps: ["openssh-clients", "openssh-server"]
+openssh_ssh: "sshd"
+openssh_src_sshd: "etc_ssh_sshd_config_RedHat.j2"
