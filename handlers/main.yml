@@ -1,6 +1,4 @@
 # file: openssh/handlers/main.yml
 
 - name: restart ssh
-  service:
-    name: "{{ openssh_ssh }}"
-    state: restarted
+  service: name={{ openssh_service_name }} state=restarted

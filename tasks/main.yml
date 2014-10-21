@@ -1,30 +1,6 @@
 # file: openssh/tasks/main.yml
-- name: OpenSSH | (Debian) Make sure server and client packages are installed
-  when: ansible_os_family == "Debian"
-  apt: pkg={{ item }} state=present
-  with_items:
-    - "{{ openssh_apps }}"
-
-- name: OpenSSH | (RedHat) Make sure server and client packages are installed
+- include: redhat.yml
   when: ansible_os_family == "RedHat"
-  yum: pkg={{ item }} state=present
-  with_items: 
-    - "{{ openssh_apps }}"
-
-- name: OpenSSH | Configure OpenSSH Client
-  template:
-    src: etc_ssh_ssh_config.j2
-    dest: /etc/ssh/ssh_config
-    owner: root
-    group: root
-    mode: 0644
-
-- name: OpenSSH | Configure OpenSSH Server
-  template:
-    src: "{{ openssh_src_sshd }}"
-    dest: /etc/ssh/sshd_config
-    owner: root
-    group: root
-    mode: 0644
-  notify:
-    - restart ssh
+  
+- include: debian.yml
+  when: ansible_os_family == "Debian"
