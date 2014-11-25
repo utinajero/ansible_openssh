@@ -5,7 +5,7 @@
     - "openssh-clients"
     - "openssh-server"
 
-- name: OpenSSH | Seting up service name
+- name: OpenSSH | Setting FACT up service name
   set_fact: openssh_service_name=sshd
     
 - name: OpenSSH | Configure OpenSSH Client
