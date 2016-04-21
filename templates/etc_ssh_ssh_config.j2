@@ -1,4 +1,4 @@
-{% if {{ ansible_lsb.id }} == 'Ubuntu' %}
+{% if ansible_lsb.id == 'Ubuntu' %}
 {% for key, value in openssh_client_settings.iteritems() %}
 {{key|e}} {{value|e}}
 {% endfor %}
