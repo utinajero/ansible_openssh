@@ -2,4 +2,8 @@
 {% for key, value in openssh_server_settings.iteritems() %}
 {{key|e}} {{value|e}}
 {% endfor %}
+{% elif elif ansible_distribution == 'CentOS' %}
+{% for key, value in openssh_server_settings_el.iteritems() %}
+{{key|e}} {{value|e}}
+{% endfor %}
 {% endif %}
