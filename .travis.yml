@@ -5,6 +5,7 @@ before_install:
  - sudo apt-get update -qq
  - sudo apt-get install -qq python-apt python-pycurl
 install:
+  # check your version
   - pip install ansible==2.0.0
 script:
   - echo localhost > inventory
