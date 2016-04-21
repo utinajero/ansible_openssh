@@ -1,5 +1,5 @@
 # anisble_openssh
-- name: OpenSSH | {{ ansible_lsb.id }} Make sure server and client packages are installed
+- name: OpenSSH | ({{ ansible_lsb.id }}) Make sure server and client packages are installed
   when: ansible_os_family == "Debian"
   apt: pkg={{ item }} state=present
   with_items:
