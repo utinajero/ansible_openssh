@@ -3,7 +3,7 @@
 {{key|e}} {{value|e}}
 {% endfor %}
 {% elif ansible_distribution == 'CentOS' %}
-{% for key, value in openssh_server_settings_el.iteritems() %}
+{% for key, value in openssh_client_settings_el.iteritems() %}
 {{key|e}} {{value|e}}
 {% endfor %}
 {% endif %}
