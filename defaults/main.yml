@@ -93,7 +93,7 @@ openssh_server_settings:
   PermitTunnel: "no"
   ChrootDirectory: "none"
 
-openssh_server_settings_RedHat:
+openssh_server_settings_el:
   Port: "22"
   AddressFamily: "any"
   Protocol: "2"
