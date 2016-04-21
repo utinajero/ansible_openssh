@@ -2,4 +2,4 @@
 
 Tested on Ubuntu  should work for CentOS 6.*
 
-edit the 'defults/main.yml' to change my configuration 
+edit the 'defaults/main.yml' to change my configuration
