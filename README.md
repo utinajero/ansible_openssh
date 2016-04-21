@@ -1,4 +1,3 @@
-# ansible ssh Configure
+# ansible ssh Configure [![Build Status](https://travis-ci.org/utinajero/ansible_openssh.svg?branch=jinja-help)](https://travis-ci.org/utinajero/ansible_openssh)
 
-Tested on CentOS 6.5 x86_64.
-It should also work on Ubuntu 12.04 LTS.
+Tested on Ubuntu  should work for CentOS 6.*
